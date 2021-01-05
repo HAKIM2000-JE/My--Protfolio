@@ -2,9 +2,9 @@ $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
+            $('.mynavbar').addClass("sticky");
         }else{
-            $('.navbar').removeClass("sticky");
+            $('.mynavbar').removeClass("sticky");
         }
         
         // scroll-up button show/hide script
@@ -22,27 +22,27 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function(){
+    $('.mynavbar .menu li a').click(function(){
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
+        $('.mynavbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
-    });
+    }); 
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Softwar Engineer", "Web developper", "Freelancer"],
+        strings: ["Software Engineer", "Web developer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Web Developper", "from Morroco"],
+        strings: ["Web Developer", "from Morroco"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
